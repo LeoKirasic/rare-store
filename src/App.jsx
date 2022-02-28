@@ -54,7 +54,12 @@ function App() {
     setCartItems(newArr);
   };
 
-    console.log(cartItems);
+  function findItem(item) {
+    const found = cartItems.findIndex(
+      (element) => element.title === item.title
+    );
+
+    return found;
   }
 
   return (
