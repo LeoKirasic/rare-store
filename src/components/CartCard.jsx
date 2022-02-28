@@ -19,5 +19,8 @@ function CartCard(props) {
 CartCard.propTypes = {
   img: propTypes.string,
   amount: propTypes.number,
+  amountChangeHandler: propTypes.func,
+  deleteItem: propTypes.func,
+  price: propTypes.func,
 };
 export default CartCard;
