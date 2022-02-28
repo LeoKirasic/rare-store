@@ -61,7 +61,12 @@ function App() {
 
     return found;
   }
-
+  function deleteItem(item) {
+    const index = findItem(item);
+    let newArr = JSON.parse(JSON.stringify(cartItems));
+    newArr.splice(index, 1);
+    setCartItems(newArr);
+  }
   return (
     <Router>
       <div className="flex flex-col flex-wrap content-center">
@@ -73,7 +78,16 @@ function App() {
             path="/shop"
             element={<Shop items={items} addToCartHandler={addToCartHandler} />}
           />
-          <Route path="/cart" element={<Cart items={cartItems} />} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                items={cartItems}
+                amountChangeHandler={amountChangeHandler}
+                deleteItem={deleteItem}
+              />
+            }
+          />
         </Routes>
       </div>
     </Router>

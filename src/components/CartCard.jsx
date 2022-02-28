@@ -12,6 +12,7 @@ function CartCard(props) {
         value={props.amount}
         onChange={(e) => props.amountChangeHandler(props, e)}
       />
+      <div onClick={() => props.deleteItem(props)}>X</div>
     </div>
   );
 }
