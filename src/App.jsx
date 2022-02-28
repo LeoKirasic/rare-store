@@ -41,7 +41,6 @@ function App() {
       setCartItems(updatedItems);
     } else {
       const updatedItems = JSON.parse(JSON.stringify(cartItems));
-      console.log('updated items', updatedItems);
       updatedItems[found].amount++;
 
       setCartItems(updatedItems);
