@@ -43,6 +43,13 @@ function App() {
 
       setCartItems(updatedItems);
     }
+  }
+  const amountChangeHandler = (item, e) => {
+    const index = findItem(item);
+    let newArr = JSON.parse(JSON.stringify(cartItems));
+    newArr[index].amount = e.target.value;
+    setCartItems(newArr);
+  };
 
     console.log(cartItems);
   }
