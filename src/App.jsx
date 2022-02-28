@@ -13,18 +13,21 @@ function App() {
       title: 'Black Crewneck',
       img: require('./assets/black-crewneck.png'),
       amount: 1,
+      price: 20,
     },
     {
       id: uniqid(),
       title: 'Black Hoodie',
       img: require('./assets/black-hoodie.png'),
       amount: 1,
+      price: 40,
     },
     {
       id: uniqid(),
       title: 'Black Shirt',
       img: require('./assets/black-shirt.png'),
       amount: 1,
+      price: 70,
     },
   ]);
   const [cartItems, setCartItems] = useState([]);
