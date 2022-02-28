@@ -11,6 +11,7 @@ function Shop(props) {
         img={item.img}
         addToCartHandler={props.addToCartHandler}
         amount={item.amount}
+        price={item.price}
       />
     ));
     return listItems;
