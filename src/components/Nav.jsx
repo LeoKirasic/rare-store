@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav className="">
-      <ul className="flex">
-        <Link to="/home">
-          <li>Home</li>
-        </Link>
+      <ul className="flex justify-center">
         <Link to="/shop">
-          <li>Shop</li>
+          <li className="mx-2 text-lg">Shop</li>
         </Link>
-        <Link to="/cart">
+        <Link className="text-lg" to="/cart">
           <li>Cart</li>
         </Link>
       </ul>

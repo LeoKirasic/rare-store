@@ -26,9 +26,9 @@ function Cart(props) {
     return total;
   }
   return (
-    <div>
-      <div className="flex">{renderItems()}</div>
-      <div>Total price: {getSumOfItems()}</div>
+    <div className="flex flex-col items-center">
+      <div className="text-xl">Total price: {getSumOfItems()}</div>
+      <div className="flex gap-4">{renderItems()}</div>
     </div>
   );
 }

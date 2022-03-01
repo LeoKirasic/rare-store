@@ -4,23 +4,28 @@ import propTypes from 'prop-types';
 function CartCard(props) {
   return (
     <div className="w-24 flex flex-wrap">
-      <img className=" w-10" src={props.img} alt="" />
+      <div className="flex w-24 flex-wrap items-center">
+        <div className="w-24" onClick={() => props.deleteItem(props)}>
+          Remove Item
+        </div>
+        <img className="w-24" src={props.img} alt="" />
+      </div>
+
       <div>${props.price}</div>
       <input
-        className=" w-10"
+        className="w-10 bg-transparent mx-2"
         type="number"
         value={props.amount}
         onChange={(e) => props.amountChangeHandler(props, e)}
       />
-      <div onClick={() => props.deleteItem(props)}>X</div>
     </div>
   );
 }
 CartCard.propTypes = {
   img: propTypes.string,
-  amount: propTypes.number,
+  amount: propTypes.oneOfType([propTypes.string, propTypes.number]),
   amountChangeHandler: propTypes.func,
   deleteItem: propTypes.func,
-  price: propTypes.func,
+  price: propTypes.number,
 };
 export default CartCard;

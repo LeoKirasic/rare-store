@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Header from './components/Header';
 import Nav from './components/Nav';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
@@ -11,21 +11,21 @@ function App() {
     {
       id: uniqid(),
       title: 'Black Crewneck',
-      img: require('./assets/black-crewneck.png'),
+      img: require('./assets/casual-classic-suit.jpg'),
       amount: 1,
       price: 20,
     },
     {
       id: uniqid(),
       title: 'Black Hoodie',
-      img: require('./assets/black-hoodie.png'),
+      img: require('./assets/casual-slim-suit.jpg'),
       amount: 1,
       price: 40,
     },
     {
       id: uniqid(),
       title: 'Black Shirt',
-      img: require('./assets/black-shirt.png'),
+      img: require('./assets/slim-suit.jpg'),
       amount: 1,
       price: 70,
     },
@@ -68,11 +68,14 @@ function App() {
   }
   return (
     <Router>
-      <div className="flex flex-col flex-wrap content-center">
+      <div className="flex flex-col flex-wrap content-center text-white items-center">
+        <Header></Header>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route
+            path="/"
+            element={<Shop items={items} addToCartHandler={addToCartHandler} />}
+          />
           <Route
             path="/shop"
             element={<Shop items={items} addToCartHandler={addToCartHandler} />}
