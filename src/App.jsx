@@ -48,7 +48,7 @@ function App() {
   }
   const amountChangeHandler = (item, e) => {
     const index = findItem(item);
-    let newArr = JSON.parse(JSON.stringify(cartItems));
+    const newArr = JSON.parse(JSON.stringify(cartItems));
     newArr[index].amount = e.target.value;
     setCartItems(newArr);
   };
@@ -62,9 +62,18 @@ function App() {
   }
   function deleteItem(item) {
     const index = findItem(item);
-    let newArr = JSON.parse(JSON.stringify(cartItems));
+    const newArr = JSON.parse(JSON.stringify(cartItems));
     newArr.splice(index, 1);
     setCartItems(newArr);
+  }
+  function deleteAllItems() {
+    const newArr = [];
+    if (cartItems.length === 0) {
+      console.log('Cart Empty!');
+    } else {
+      setCartItems(newArr);
+      alert('Thanks for Shopping!');
+    }
   }
   return (
     <Router>
@@ -87,6 +96,7 @@ function App() {
                 items={cartItems}
                 amountChangeHandler={amountChangeHandler}
                 deleteItem={deleteItem}
+                deleteAllItems={deleteAllItems}
               />
             }
           />

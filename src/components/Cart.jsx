@@ -29,6 +29,7 @@ function Cart(props) {
     <div className="flex flex-col items-center">
       <div className="text-xl">Total price: {getSumOfItems()}</div>
       <div className="flex gap-4">{renderItems()}</div>
+      <button onClick={props.deleteAllItems}>CHECK OUT</button>
     </div>
   );
 }
@@ -38,6 +39,7 @@ Cart.propTypes = {
   amountChangeHandler: propTypes.func,
   deleteItem: propTypes.func,
   price: propTypes.number,
+  deleteAllItems: propTypes.func,
 };
 
 export default Cart;
