@@ -2,7 +2,6 @@ import React from 'react';
 import CartCard from './CartCard';
 import propTypes from 'prop-types';
 function Cart(props) {
-  console.log('cart props', props);
   function renderItems() {
     const listItems = props.items.map((item) => (
       <CartCard
