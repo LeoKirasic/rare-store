@@ -10,24 +10,24 @@ function App() {
   const [items, setItems] = useState([
     {
       id: uniqid(),
-      title: 'Black Crewneck',
+      title: 'Casual Classic Suit',
       img: require('./assets/casual-classic-suit.jpg'),
       amount: 1,
-      price: 20,
+      price: 250,
     },
     {
       id: uniqid(),
-      title: 'Black Hoodie',
+      title: 'Casual Slim Suit',
       img: require('./assets/casual-slim-suit.jpg'),
       amount: 1,
-      price: 40,
+      price: 240,
     },
     {
       id: uniqid(),
-      title: 'Black Shirt',
+      title: 'Slim Suit',
       img: require('./assets/slim-suit.jpg'),
       amount: 1,
-      price: 70,
+      price: 370,
     },
   ]);
   const [cartItems, setCartItems] = useState([]);
