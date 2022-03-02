@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/suit-store/static/css/main.688ef876.css",
+    "main.js": "/suit-store/static/js/main.4e5cd345.js",
+    "static/js/787.f343fa33.chunk.js": "/suit-store/static/js/787.f343fa33.chunk.js",
+    "static/media/background.jpg": "/suit-store/static/media/background.d9ce85c0a310a0b55c93.jpg",
+    "static/media/slim-suit.jpg": "/suit-store/static/media/slim-suit.550595c9a43336ed72be.jpg",
+    "static/media/casual-slim-suit.jpg": "/suit-store/static/media/casual-slim-suit.ab6ace1f5cf624164c99.jpg",
+    "static/media/casual-classic-suit.jpg": "/suit-store/static/media/casual-classic-suit.66996dd7fa7ea13e6356.jpg",
+    "index.html": "/suit-store/index.html",
+    "main.688ef876.css.map": "/suit-store/static/css/main.688ef876.css.map",
+    "main.4e5cd345.js.map": "/suit-store/static/js/main.4e5cd345.js.map",
+    "787.f343fa33.chunk.js.map": "/suit-store/static/js/787.f343fa33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.688ef876.css",
+    "static/js/main.4e5cd345.js"
+  ]
+}
