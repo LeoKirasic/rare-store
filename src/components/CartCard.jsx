@@ -5,7 +5,10 @@ function CartCard(props) {
   return (
     <div className="w-24 flex flex-wrap">
       <div className="flex w-24 flex-wrap items-center">
-        <div className="w-24" onClick={() => props.deleteItem(props)}>
+        <div
+          className="w-24 cursor-pointer"
+          onClick={() => props.deleteItem(props)}
+        >
           Remove Item
         </div>
         <img className="w-24" src={props.img} alt="" />
