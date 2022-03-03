@@ -5,8 +5,8 @@
    E-Commerce Type Application Dedicated to Suits.
         
    [Live Demo](https://suit-store.netlify.app/shop) •
-   [Installation]() •
-   [Technologies]()
+   [Installation](#installation) •
+   [Technologies](#technologies)
    ![Preview](https://i.imgur.com/IMGKVzv.png)
 </div>
 
